@@ -1,3 +1,7 @@
+#ARG DEBIAN_FRONTEND=noninteractive
+#ARG VARIANT=bullseye
+#FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
+
 FROM ubuntu:22.04
 
 #git is required in codespaces_local.sh git clone dotfiles repo
