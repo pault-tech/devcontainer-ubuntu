@@ -1,10 +1,11 @@
 {
+  "name": "codespace_local",
+
   // "name": "",
-  "image": "mcr.microsoft.com/vscode/devcontainers/base:bullseye", 
-	
-  //"build": {
-  //  "dockerfile": "Dockerfile",
-  //},
+  // "image": "mcr.microsoft.com/vscode/devcontainers/base:bullseye", 
+  "build": {
+   "dockerfile": "Dockerfile"
+  },
 
   //features
   // "features": {
