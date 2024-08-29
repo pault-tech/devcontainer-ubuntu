@@ -1,4 +1,4 @@
-ARG DEBIAN_FRONTEND=noninteractive
+# ARG DEBIAN_FRONTEND=noninteractive
 #ARG VARIANT=bullseye
 #FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
 
@@ -20,7 +20,7 @@ rsync
 
 #emacs 29
 RUN add-apt-repository ppa:ubuntuhandbook1/emacs
-RUN apt install -y emacs-nox
+RUN DEBIAN_FRONTEND=noninteractive apt install -y emacs-nox
 
 RUN useradd -ms /bin/bash vscode
 # To create an user without a password, use passwd -d 
