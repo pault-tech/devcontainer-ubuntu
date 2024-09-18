@@ -25,7 +25,7 @@
   
   "mounts": [
     "source=/workspaces,target=/workspaces,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/src/,target=/home/root/src,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/src/,target=/home/vscode/src,type=bind,consistency=cached"
   ],
 
   "containerEnv": {
