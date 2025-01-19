@@ -16,6 +16,8 @@ software-properties-common \
 iputils-ping \
 ssh \
 gnupg \
+screen \
+sudo \
 rsync
 
 #emacs 29
