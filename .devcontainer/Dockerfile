@@ -24,7 +24,7 @@ rsync
 RUN add-apt-repository ppa:ubuntuhandbook1/emacs
 RUN DEBIAN_FRONTEND=noninteractive apt -y install emacs-nox
 
-RUN useradd -ms /bin/bash vscode
+RUN useradd -G sudo -ms /bin/bash vscode
 # To create an user without a password, use passwd -d 
 RUN passwd -d vscode
 # RUN ln -s /home /Users
