@@ -18,6 +18,7 @@ ssh \
 gnupg \
 screen \
 sudo \
+vim \
 rsync
 
 #emacs 29
