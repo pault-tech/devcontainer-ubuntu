@@ -8,8 +8,8 @@
   },
 
   //features
-  // "features": {
-  //   "ghcr.io/devcontainers/features/docker-outside-of-docker:1":{},
+  "features": {
+     "ghcr.io/devcontainers/features/docker-outside-of-docker:1":{},
   //   "ghcr.io/devcontainers-contrib/features/neovim-apt-get:1":{},
   //   "ghcr.io/eitsupi/devcontainer-features/jq-likes:2":{},
   //   "ghcr.io/robbert229/devcontainer-features/postgresql-client:1":{},
@@ -20,7 +20,7 @@
   //   "ghcr.io/devcontainers-contrib/features/kubectl-asdf:2":{},
   //   "ghcr.io/schlich/devcontainer-features/helmfile:1":{},
   //   // ":{},
-  // },
+  },
   //customizations
   
   "mounts": [
@@ -35,4 +35,8 @@
   "initializeCommand": [
 		"docker", "build", "--network=host", ".devcontainer"
 	],
+
+  // jupytext converts notebooks to py automatically on-open in spacemacs
+  "postCreateCommand": "pip install --user kaggle && pip install --user jupytext"
+
 }
