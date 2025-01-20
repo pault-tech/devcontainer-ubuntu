@@ -19,6 +19,7 @@ gnupg \
 screen \
 sudo \
 vim \
+python3-pip \
 rsync
 
 #emacs 29
