@@ -6,8 +6,8 @@
 # //use dev tag see: https://github.com/orgs/community/discussions/63776
 # //"image": "mcr.microsoft.com/devcontainers/universal:dev",  // no space left on devices as of 2025/04
 
-# FROM ubuntu:22.04 # node not installed by default
-FROM mcr.microsoft.com/vscode/devcontainers/universal:2
+FROM ubuntu:22.04 # node not installed by default
+# FROM mcr.microsoft.com/vscode/devcontainers/universal:2
 
 #git is required in codespaces_local.sh git clone dotfiles repo
 RUN apt update && apt -y install \
